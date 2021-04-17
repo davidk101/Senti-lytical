@@ -19,7 +19,9 @@
 		98CE2D19262B6C75007DBB0E /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */; };
 		98CE2D1A262B6F01007DBB0E /* Pods_senti_lytical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		98CE2D1B262B6F01007DBB0E /* Pods_senti_lytical.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		98CE2D1E262B786F007DBB0E /* articleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D1D262B786F007DBB0E /* articleCell.swift */; };
+		98CE2D22262B7D1D007DBB0E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D21262B7D1D007DBB0E /* TableViewCell.swift */; };
+		98CE2D24262B7E3F007DBB0E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D23262B7E3F007DBB0E /* Article.swift */; };
+		98CE2D26262B7EF6007DBB0E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D25262B7EF6007DBB0E /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,7 +53,9 @@
 		98CE2D0F262B24F5007DBB0E /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		98CE2D12262B667F007DBB0E /* scanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scanViewController.swift; sourceTree = "<group>"; };
 		98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		98CE2D1D262B786F007DBB0E /* articleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articleCell.swift; sourceTree = "<group>"; };
+		98CE2D21262B7D1D007DBB0E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		98CE2D23262B7E3F007DBB0E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		98CE2D25262B7EF6007DBB0E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D08DB020C53CFC217A2B6D50 /* Pods-senti-lytical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-senti-lytical.release.xcconfig"; path = "Target Support Files/Pods-senti-lytical/Pods-senti-lytical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,7 @@
 				98CE2CFB262B1751007DBB0E /* ViewController.swift */,
 				98CE2D0F262B24F5007DBB0E /* searchViewController.swift */,
 				98CE2D12262B667F007DBB0E /* scanViewController.swift */,
+				98CE2D25262B7EF6007DBB0E /* TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,7 +137,8 @@
 			children = (
 				98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */,
 				98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */,
-				98CE2D1D262B786F007DBB0E /* articleCell.swift */,
+				98CE2D21262B7D1D007DBB0E /* TableViewCell.swift */,
+				98CE2D23262B7E3F007DBB0E /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CE2D1E262B786F007DBB0E /* articleCell.swift in Sources */,
 				98CE2D19262B6C75007DBB0E /* Resnet50.mlmodel in Sources */,
+				98CE2D22262B7D1D007DBB0E /* TableViewCell.swift in Sources */,
+				98CE2D24262B7E3F007DBB0E /* Article.swift in Sources */,
+				98CE2D26262B7EF6007DBB0E /* TableViewController.swift in Sources */,
 				98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */,
 				98CE2D13262B667F007DBB0E /* scanViewController.swift in Sources */,
 				98CE2D10262B24F5007DBB0E /* searchViewController.swift in Sources */,

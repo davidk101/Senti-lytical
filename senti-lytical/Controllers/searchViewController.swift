@@ -53,6 +53,14 @@ class searchViewController: UIViewController, UITextFieldDelegate {
             
             loading.stopAnimating()
         }
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "table_vc") as? TableViewController
+            else{
+                return
+        }
+        present(vc, animated: true, completion: nil)
+        
+        
     }
     
     
