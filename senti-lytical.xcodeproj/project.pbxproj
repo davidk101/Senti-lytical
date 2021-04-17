@@ -13,6 +13,7 @@
 		98CE2CFF262B1751007DBB0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2CFD262B1751007DBB0E /* Main.storyboard */; };
 		98CE2D01262B1752007DBB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2D00262B1752007DBB0E /* Assets.xcassets */; };
 		98CE2D04262B1752007DBB0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2D02262B1752007DBB0E /* LaunchScreen.storyboard */; };
+		98CE2D0C262B1B87007DBB0E /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		98CE2D00262B1752007DBB0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CE2D03262B1752007DBB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CE2D05262B1752007DBB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */,
 				98CE2CFB262B1751007DBB0E /* ViewController.swift */,
 				98CE2CFD262B1751007DBB0E /* Main.storyboard */,
+				98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */,
 				98CE2D00262B1752007DBB0E /* Assets.xcassets */,
 				98CE2D02262B1752007DBB0E /* LaunchScreen.storyboard */,
 				98CE2D05262B1752007DBB0E /* Info.plist */,
@@ -141,6 +144,7 @@
 				98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */,
 				98CE2CF8262B1751007DBB0E /* AppDelegate.swift in Sources */,
 				98CE2CFA262B1751007DBB0E /* SceneDelegate.swift in Sources */,
+				98CE2D0C262B1B87007DBB0E /* RoundedShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "david-kumar.senti-lytical";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "david-kumar.senti-lytical";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
