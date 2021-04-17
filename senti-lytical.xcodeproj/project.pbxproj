@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70FEA11387FC07B94A652E86 /* Pods_senti_lytical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; };
 		98CE2CF8262B1751007DBB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CF7262B1751007DBB0E /* AppDelegate.swift */; };
 		98CE2CFA262B1751007DBB0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */; };
 		98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CFB262B1751007DBB0E /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		98CE2D01262B1752007DBB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2D00262B1752007DBB0E /* Assets.xcassets */; };
 		98CE2D04262B1752007DBB0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2D02262B1752007DBB0E /* LaunchScreen.storyboard */; };
 		98CE2D0C262B1B87007DBB0E /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */; };
+		98CE2D10262B24F5007DBB0E /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D0F262B24F5007DBB0E /* searchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DBF5784C8621901784B85E4 /* Pods-senti-lytical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-senti-lytical.debug.xcconfig"; path = "Target Support Files/Pods-senti-lytical/Pods-senti-lytical.debug.xcconfig"; sourceTree = "<group>"; };
+		5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_senti_lytical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CE2CF4262B1751007DBB0E /* senti-lytical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "senti-lytical.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CE2CF7262B1751007DBB0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		98CE2D03262B1752007DBB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CE2D05262B1752007DBB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		98CE2D0F262B24F5007DBB0E /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		D08DB020C53CFC217A2B6D50 /* Pods-senti-lytical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-senti-lytical.release.xcconfig"; path = "Target Support Files/Pods-senti-lytical/Pods-senti-lytical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FEA11387FC07B94A652E86 /* Pods_senti_lytical.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C037E6A3B970C7B07B05A93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DBF5784C8621901784B85E4 /* Pods-senti-lytical.debug.xcconfig */,
+				D08DB020C53CFC217A2B6D50 /* Pods-senti-lytical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7EBD5567EB2C2F9A77FF4956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98CE2CEB262B1751007DBB0E = {
 			isa = PBXGroup;
 			children = (
 				98CE2CF6262B1751007DBB0E /* senti-lytical */,
 				98CE2CF5262B1751007DBB0E /* Products */,
+				4C037E6A3B970C7B07B05A93 /* Pods */,
+				7EBD5567EB2C2F9A77FF4956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +86,7 @@
 			children = (
 				98CE2CF7262B1751007DBB0E /* AppDelegate.swift */,
 				98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */,
-				98CE2CFB262B1751007DBB0E /* ViewController.swift */,
+				98CE2D11262B29DB007DBB0E /* Controllers */,
 				98CE2CFD262B1751007DBB0E /* Main.storyboard */,
 				98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */,
 				98CE2D00262B1752007DBB0E /* Assets.xcassets */,
@@ -70,6 +96,15 @@
 			path = "senti-lytical";
 			sourceTree = "<group>";
 		};
+		98CE2D11262B29DB007DBB0E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98CE2CFB262B1751007DBB0E /* ViewController.swift */,
+				98CE2D0F262B24F5007DBB0E /* searchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98CE2D08262B1752007DBB0E /* Build configuration list for PBXNativeTarget "senti-lytical" */;
 			buildPhases = (
+				92111D745648A6FC6BA7DBAE /* [CP] Check Pods Manifest.lock */,
 				98CE2CF0262B1751007DBB0E /* Sources */,
 				98CE2CF1262B1751007DBB0E /* Frameworks */,
 				98CE2CF2262B1751007DBB0E /* Resources */,
+				9AE0F2C22A6605166D6DB43C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,12 +173,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92111D745648A6FC6BA7DBAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-senti-lytical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE0F2C22A6605166D6DB43C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-senti-lytical/Pods-senti-lytical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-senti-lytical/Pods-senti-lytical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-senti-lytical/Pods-senti-lytical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98CE2CF0262B1751007DBB0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */,
+				98CE2D10262B24F5007DBB0E /* searchViewController.swift in Sources */,
 				98CE2CF8262B1751007DBB0E /* AppDelegate.swift in Sources */,
 				98CE2CFA262B1751007DBB0E /* SceneDelegate.swift in Sources */,
 				98CE2D0C262B1B87007DBB0E /* RoundedShadowButton.swift in Sources */,
@@ -286,6 +366,7 @@
 		};
 		98CE2D09262B1752007DBB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBF5784C8621901784B85E4 /* Pods-senti-lytical.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +384,7 @@
 		};
 		98CE2D0A262B1752007DBB0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08DB020C53CFC217A2B6D50 /* Pods-senti-lytical.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
