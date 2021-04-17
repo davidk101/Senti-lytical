@@ -17,8 +17,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         
         fetchArticles()
         
@@ -63,7 +63,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     self.tableView.reloadData()
                 
                 }
-                
             }
             
             catch let error{
@@ -74,7 +73,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         task.resume()
         
-
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,12 +82,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! TableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+                
         cell.title.text = self.articles?[indexPath.item].headline
-        
-        print(cell.title.text)
-        
+                
         return cell
         
     }
