@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70FEA11387FC07B94A652E86 /* Pods_senti_lytical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; };
 		98CE2CF8262B1751007DBB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CF7262B1751007DBB0E /* AppDelegate.swift */; };
 		98CE2CFA262B1751007DBB0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */; };
 		98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2CFB262B1751007DBB0E /* ViewController.swift */; };
@@ -16,7 +15,26 @@
 		98CE2D04262B1752007DBB0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CE2D02262B1752007DBB0E /* LaunchScreen.storyboard */; };
 		98CE2D0C262B1B87007DBB0E /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */; };
 		98CE2D10262B24F5007DBB0E /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D0F262B24F5007DBB0E /* searchViewController.swift */; };
+		98CE2D13262B667F007DBB0E /* scanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D12262B667F007DBB0E /* scanViewController.swift */; };
+		98CE2D19262B6C75007DBB0E /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */; };
+		98CE2D1A262B6F01007DBB0E /* Pods_senti_lytical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		98CE2D1B262B6F01007DBB0E /* Pods_senti_lytical.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF939860257ADAA02F5D5DD /* Pods_senti_lytical.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CE2D1E262B786F007DBB0E /* articleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2D1D262B786F007DBB0E /* articleCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98CE2D1C262B6F01007DBB0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98CE2D1B262B6F01007DBB0E /* Pods_senti_lytical.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0DBF5784C8621901784B85E4 /* Pods-senti-lytical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-senti-lytical.debug.xcconfig"; path = "Target Support Files/Pods-senti-lytical/Pods-senti-lytical.debug.xcconfig"; sourceTree = "<group>"; };
@@ -31,6 +49,9 @@
 		98CE2D05262B1752007DBB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		98CE2D0F262B24F5007DBB0E /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		98CE2D12262B667F007DBB0E /* scanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scanViewController.swift; sourceTree = "<group>"; };
+		98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		98CE2D1D262B786F007DBB0E /* articleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articleCell.swift; sourceTree = "<group>"; };
 		D08DB020C53CFC217A2B6D50 /* Pods-senti-lytical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-senti-lytical.release.xcconfig"; path = "Target Support Files/Pods-senti-lytical/Pods-senti-lytical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70FEA11387FC07B94A652E86 /* Pods_senti_lytical.framework in Frameworks */,
+				98CE2D1A262B6F01007DBB0E /* Pods_senti_lytical.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +109,7 @@
 				98CE2CF9262B1751007DBB0E /* SceneDelegate.swift */,
 				98CE2D11262B29DB007DBB0E /* Controllers */,
 				98CE2CFD262B1751007DBB0E /* Main.storyboard */,
-				98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */,
+				98CE2D14262B68F5007DBB0E /* Models */,
 				98CE2D00262B1752007DBB0E /* Assets.xcassets */,
 				98CE2D02262B1752007DBB0E /* LaunchScreen.storyboard */,
 				98CE2D05262B1752007DBB0E /* Info.plist */,
@@ -101,8 +122,19 @@
 			children = (
 				98CE2CFB262B1751007DBB0E /* ViewController.swift */,
 				98CE2D0F262B24F5007DBB0E /* searchViewController.swift */,
+				98CE2D12262B667F007DBB0E /* scanViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98CE2D14262B68F5007DBB0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98CE2D17262B6C3D007DBB0E /* Resnet50.mlmodel */,
+				98CE2D0B262B1B87007DBB0E /* RoundedShadowButton.swift */,
+				98CE2D1D262B786F007DBB0E /* articleCell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +149,7 @@
 				98CE2CF1262B1751007DBB0E /* Frameworks */,
 				98CE2CF2262B1751007DBB0E /* Resources */,
 				9AE0F2C22A6605166D6DB43C /* [CP] Embed Pods Frameworks */,
+				98CE2D1C262B6F01007DBB0E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,7 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CE2D1E262B786F007DBB0E /* articleCell.swift in Sources */,
+				98CE2D19262B6C75007DBB0E /* Resnet50.mlmodel in Sources */,
 				98CE2CFC262B1751007DBB0E /* ViewController.swift in Sources */,
+				98CE2D13262B667F007DBB0E /* scanViewController.swift in Sources */,
 				98CE2D10262B24F5007DBB0E /* searchViewController.swift in Sources */,
 				98CE2CF8262B1751007DBB0E /* AppDelegate.swift in Sources */,
 				98CE2CFA262B1751007DBB0E /* SceneDelegate.swift in Sources */,
@@ -370,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 776S2HXKTP;
 				INFOPLIST_FILE = "senti-lytical/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 776S2HXKTP;
 				INFOPLIST_FILE = "senti-lytical/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

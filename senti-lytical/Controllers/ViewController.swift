@@ -20,6 +20,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func scanButton(_ sender: Any) {
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "scan_vc") as? scanViewController
+            else{
+                return
+        }
+        present(vc, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

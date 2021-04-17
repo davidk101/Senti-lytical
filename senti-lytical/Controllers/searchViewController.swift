@@ -49,7 +49,7 @@ class searchViewController: UIViewController, UITextFieldDelegate {
         
         loading.startAnimating()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.4){
             
             loading.stopAnimating()
         }
