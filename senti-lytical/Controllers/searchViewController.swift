@@ -28,7 +28,31 @@ class searchViewController: UIViewController, UITextFieldDelegate {
         
         print(searchField.text!)
         
+        startAnimation()
+        
         return true
+    }
+    
+    fileprivate func startAnimation(){
+        
+        let loading = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .darkGray, padding: 0)
+        loading.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loading)
+        NSLayoutConstraint.activate([
+            
+            loading.widthAnchor.constraint(equalToConstant: 40),
+            loading.heightAnchor.constraint(equalToConstant: 40),
+            loading.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            loading.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        
+        ])
+        
+        loading.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
+            
+            loading.stopAnimating()
+        }
     }
     
     
